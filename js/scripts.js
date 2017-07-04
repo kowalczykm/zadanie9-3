@@ -1,13 +1,14 @@
-var text = 'Test test test test test test test';
+function drawTree(height) {
+	var star;
 
-var dinosaur = 'triceratops';
+	for (var i = 1; i <= height; i++) {
+		star = '';
+		for (var j = 1; j <= i; j++) {
+			star += '*';
+		}
+		console.log(star);
+	}
+}
 
-var dinosaurUpperCased = dinosaur.toUpperCase();
-
-var secondText = text.replace('Velociraptor', dinosaurUpperCased);
-
-console.log(secondText.length); 
-
-var finalText = secondText.slice(0,secondText.length/2);
-
-console.log(finalText);
+// drawTree(prompt('Wysokość:'));
+drawTree(6);
